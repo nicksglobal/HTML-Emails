@@ -1,6 +1,6 @@
 # Creating HTML Emails
 
-___
+===
 
 1. Receive PSD File
 
