@@ -11,3 +11,6 @@
 4. Test Email before sending out
 
 5. Final Revision 
+
+Use this link to inline code!!
+http://zurb.com/ink/inliner.php
