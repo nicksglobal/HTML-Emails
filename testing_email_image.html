@@ -1,0 +1,66 @@
+<style>
+html, body {
+			padding: 0;
+			margin: 0;
+			font: 1em sans-serif;
+		}
+
+		.input {
+			display: block;
+			padding: 0;
+			margin: -1px 0 0 -5px;
+			border: none;
+			font-size: 0;
+			-webkit-appearance: none;
+			border-radius: 0;
+		}
+
+		.input::-webkit-file-upload-button {
+			border: none;
+			margin: 0;
+			padding: 0;
+			-webkit-appearance: none;
+			width: 0;
+		}
+
+		.button {
+			display: block;
+			background: #663399;
+			font-weight: bold;
+			padding: 1em;
+			margin: 1em;
+			color: #fff;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.frame {
+			width: 12px;
+			height: 12px;
+			overflow: hidden;
+			-webkit-transform: scale(10);
+			-webkit-transform-origin: left top;
+			transform: scale(10);
+			transform-origin: left top;
+		}
+
+		.photo {
+			margin: 20px auto;
+			width: 120px;
+			height: 120px;
+			background: #cacaca;
+			border-radius: 100%;
+			overflow: hidden;
+			-webkit-animation:ohlala 5s infinite linear;
+			animation:ohlala 5s infinite linear;
+		}
+
+		@-webkit-keyframes ohlala { 0% { -webkit-transform:rotate(0); } 100% { -webkit-transform:rotate(360deg); } }
+		@keyframes ohlala { 0% { -webkit-transform:rotate(0); transform:rotate(0); } 100% { -webkit-transform:rotate(360deg); transform:rotate(360deg); } }
+</style>
+<div class="photo">
+  <div class="frame">
+    <input id="camera" type="file" accept="image/*" class="input" />
+  </div>
+</div>
+<label for="camera" class="button">Take a picture</label>
